@@ -1,0 +1,106 @@
+
+.site-header { 
+  display: flex;
+  justify-content: space-between;  /* asked chat gpt how to do this part*/
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2933;
+}
+
+.nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.nav a:hover {
+  color: #2563eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+.hero {            
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 30px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+/* schedule button */
+.btn.primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background-color: #1d4ed8;
+}
+
+/*learn more button */
+.btn.secondary {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  background-color: transparent;
+}
+
+.btn.secondary:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.hero-image img {
+  width: 600px; /* had to ask chatgpt why my image and text were far apart */
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
