@@ -1,7 +1,35 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2933;
+  line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* global imgs*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .site-header { 
   display: flex;
-  justify-content: space-between;  /* asked chat gpt how to do this part*/
+  justify-content: space-between; 
   align-items: center;
   padding: 20px 10%;
   background-color: #ffffff;
@@ -22,6 +50,46 @@
   color: #374151;
 }
 
+/* Footer */
+.site-footer {
+  background-color: #1f2933;
+  color: #ffffff;
+  padding: 20px max(5%, 40px);
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Contact info */
+.footer-contact p {
+  margin-bottom: 8px;
+}
+
+/* Links */
+.footer-links a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom text */
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
 .nav a:hover {
   color: #2563eb;
 }
@@ -32,18 +100,11 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f9fafb;
-  color: #1f2933;
-  line-height: 1.6;
-}
-
 .hero {            
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 10%;
+  padding: 20px max(5%, 40px);
   gap: 30px;
 }
 
@@ -103,4 +164,116 @@ body {
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* contact button */
+.dropbtn {
+  text-decoration: none;
+  color: #374151;
+  margin-left: 30px;
+}
+
+/* reveals and hides dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* links in dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #374151;
+}
+
+/* hover effects */
+.dropdown-content a:hover {
+  background-color: #f3f4f6;
+}
+
+/* show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* dropdown fix for mobile */
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* push footer bottom */
+.site-footer {
+  margin-top: auto;
+}
+
+/*  below is 4 mobile responsiviness */
+@media (max-width: 768px) {
+
+  /* header */
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav a {
+    margin-left: 0;
+  }
+
+  /* hero sect */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  /* forms */
+  .form-section,
+  .consult-box {
+    padding: 20px;
+  }
+
+  /* footers */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+.nav a,
+.dropdown-content a,
+.btn {
+  transition: all 0.2s ease;
 }
