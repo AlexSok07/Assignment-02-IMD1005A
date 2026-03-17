@@ -1,76 +1,107 @@
 <!DOCTYPE html>
 <html lang="en-ca">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,
+                initial-scale=1.0">
   <title>Free Consultation</title>
   <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
 
   <header class="site-header">
-    <div class="logo">
-      Sarah Chen Tutoring
-    </div>
-
+    <div class="logo">Sarah Chen Tutoring</div>
     <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="#.html">Services</a>
-        <a href="form.html">Contact</a>
+      <a href="tutor.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Services</a>
+
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="consult.html">Free Consultation</a>
+          <a href="form.html">Schedule Tutoring</a>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section class="form-section">  
-    <h2>Contact Now</h2>
+  <main>
+    <section class="form-section">
+      <h2>Contact Now</h2>
 
-    <form class="contact-form">
+      <form class="contact-form" action="submitted.html">
 
-      <label>
-        Name
-        <input type="text" required>
-      </label>
+        <label>
+          Name
+          <input type="text" required>
+        </label>
 
-      <label>
-        Name of Student
-        <input type="text">
-      </label>
+        <label>
+          Name of Student
+          <input type="text">
+        </label>
 
-      <label>
-        Email
-        <input type="email" required>
-      </label>
+        <label>
+          Email
+          <input type="email" required>
+        </label>
 
-      <label>
-        Student Grade
-        <select>
-          <option value="">Select a grade</option>
-          <option>Grade 5 or below</option>
-          <option>Grade 6</option>
-          <option>Grade 7</option>
-          <option>Grade 8</option>
-          <option>Grade 9</option>
-          <option>Grade 10</option>
-          <option>Grade 11</option>
-          <option>Grade 12</option>
-        </select>
-      </label>
+        <label>
+          Student Grade
+          <select>
+            <option value="">Select a grade</option>
+            <option>Grade 5 or below</option>
+            <option>Grade 6</option>
+            <option>Grade 7</option>
+            <option>Grade 8</option>
+            <option>Grade 9</option>
+            <option>Grade 10</option>
+            <option>Grade 11</option>
+            <option>Grade 12</option>
+          </select>
+        </label>
 
-      <label>
-        Subject Interest
-        <select>
-          <option value="">Select a subject</option>
-          <option>General Math</option>
-          <option>Pre-Algebra</option>
-          <option>Algebra</option>
-          <option>Geometry</option>
-          <option>Advanced Functions</option>
-          <option>Calculus</option>
-        </select>
-      </label>
+        <label>
+          Subject Interest
+          <select>
+            <option value="">Select a subject</option>
+            <option>General Math</option>
+            <option>Pre-Algebra</option>
+            <option>Algebra</option>
+            <option>Geometry</option>
+            <option>Advanced Functions</option>
+            <option>Calculus</option>
+          </select>
+        </label>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+
+      <div class="footer-contact">
+        <p><strong>Email:</strong> example@sarahchentutoring.com</p>
+        <p><strong>Phone:</strong> (613) 123-4567</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="tutor.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="form.html">Schedule Tutoring</a>
+        <a href="consultation.html">Free Consultation</a>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2026 Sarah Chen Tutoring</p>
+  </footer>
 
 </body>
+
 </html>
